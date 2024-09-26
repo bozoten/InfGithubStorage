@@ -14,7 +14,7 @@ g = Github(token)
 target_path = "highres.jpg"
 
 # specify reponame owner/repo
-repo_name = "Pavelrh/test2"
+repo_name = "bozoten/inf-POC"
 repo = g.get_repo(repo_name)
 
 file_path = "./GitSpell/file.txt"
@@ -47,5 +47,5 @@ for i in range(0, len(target_encode), batch_size):
         repo.create_file(file_path, commit_message, content_encoded, branch=branch)
         print("Upload has started pookie bear kiss kiss")
 
-    # IM DELAYING THIS BECAUSE I DO NOT MEAN TO CAUSE ANY PROBLEMS, THIS PROJECT IS PURELY A JOKE. I DO NOT WANT TO HURT GITHUB OR THEIR ORGANISATION IN ANYWAY
-    time.sleep(30)        
+    # IM DELAYING THIS BECAUSE I DO NOT MEAN TO CAUSE ANY PROBLEMS, THIS PROJECT IS PURELY A JOKE.
+    time.sleep(10)        
