@@ -15,6 +15,7 @@
 - [Usage](#usage)
   - [Saving Files to GitHub](#saving-files-to-github)
 - [Example](#example)
+- [High Res Setup](#Usage-and-Environment-Setup-for-High-Resolution-Implementation)
 - [Important Notes](#important-notes)
 - [License](#license)
 
@@ -31,7 +32,6 @@
 
 ### Save Files to GitHub Commit Messages
 - Files are encoded in base64 format and stored inside commit messages.
-- The script checks if the file already exists in the repository, updates it if it does, and creates it if it doesn’t.
 - For large files (e.g., `highres`), the file is encoded in batches of 10k characters and committed to GitHub in chunks.
 
 ### Retrieve Files from Commit History
@@ -41,6 +41,27 @@
 ## Main Problem with My Normal Approach
 - **GitHub Commit Message Character Limit**: 
   Each commit message on GitHub is limited to approximately a maximum of 10,000 characters. This means that larger files end up corrupted or face data loss.
+  
+<div style="display: flex; align-items: center;">
+  <p>
+    Normal Approach
+    <div style="display: flex; align-items: center;">
+    <img src="https://github.com/bozoten/InfGithubStorage/blob/master/Target_Files/highres.jpg" width="70" alt="Spiderman"/>
+    <span>-></span>
+    <img src="https://github.com/bozoten/InfGithubStorage/blob/master/Decoded_Targets/highResAttempt1.jpg" width="70" alt="Spiderman"/>
+    </div>
+  </p>
+
+  <p>
+    Circumvention
+    <div style="display: flex; align-items: center;">
+    <img src="https://github.com/bozoten/InfGithubStorage/blob/master/Target_Files/highres.jpg" width="70" alt="Spiderman"/>
+    <span>-></span>
+    <img src="https://github.com/bozoten/InfGithubStorage/blob/master/Decoded_Targets/output_image.jpg" width="70" alt="Spiderman"/>
+    </div>
+  </p>
+</div>
+  
 
 ## Circumvention for the Problem
 
@@ -67,7 +88,7 @@ For files that are too large to fit into a single commit (due to GitHub’s 10k 
 You can install the necessary libraries using:
 
 ```bash
-pip install PyGithub python-dotenv
+pip install PyGithub
 ```
 
 ### Environment Setup
@@ -164,7 +185,7 @@ File saved as 0decoded_files.png
 
 ## Important Notes
 - **This is purely a meme project**. Do not use this for serious or large-scale storage purposes.
-- The storage capacity is limited by GitHub's commit history limits and your own Personal Access Token’s permissions.
+- The storage capacity is unlimited theoretically.
 - You might want to tweak the commit size limits and GitHub API requests to optimize performance for larger files.
 
 ## License
