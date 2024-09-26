@@ -10,7 +10,7 @@ token = "YOUR_PAT"
 g = Github(token)
 
 # target File Path
-target_path = "target.png"
+target_path = "highres.jpg"
 
 # specify reponame owner/repo
 repo_name = "bozoten/GitSpell"

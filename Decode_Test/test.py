@@ -1,4 +1,4 @@
-# Just a test cus i was having trouble with decode initially hahaha
+# some test files for decoder and encoder
 import base64
 target_path = "target.png"
 
