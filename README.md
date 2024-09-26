@@ -41,6 +41,9 @@
 ## Main Problem with My Normal Approach
 - **GitHub Commit Message Character Limit**: 
   Each commit message on GitHub is limited to approximately a maximum of 10,000 characters. This means that larger files end up corrupted or face data loss.
+
+## Proof of Concept:
+<a href="https://github.com/bozoten/Inf-POC.git">Github Repo to the file storage repo</a>
   
 <div style="display: flex; align-items: center;">
   <p>
