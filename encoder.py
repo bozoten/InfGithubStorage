@@ -1,9 +1,6 @@
 import os
 from github import Github
 import base64
-from dotenv import load_dotenv
-
-load_dotenv
 
 # personal access token
 token = "YOUR_PAT"
